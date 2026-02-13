@@ -22,6 +22,38 @@ body:hover{
     transition: 0.5s;
     background-color: aqua;
 }
+
+body {
+  background: linear-gradient(45deg, orange, blue);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.star {
+  width: 100px;
+  height: 100px;
+  background: white;
+  clip-path: polygon(
+    50% 0%,
+    61% 35%,
+    98% 35%,
+    68% 57%,
+    79% 91%,
+    50% 70%,
+    21% 91%,
+    32% 57%,
+    2% 35%,
+    39% 35%
+  );
+  transition: 0.5s;
+}
+
+.star:hover {
+  transform: scale(1.3);
+  mix-blend-mode: difference;
+}
 </style>
 
 </head>
@@ -32,6 +64,8 @@ body:hover{
     Hello world!
 
      <p>In this project, you will create a webpage that displays the text "Hello world!" three times. You will use CSS to style the text with a large font size, increased letter spacing, and adjusted line height to create a visually appealing layout.</p>
+
+<div class="star"></div>
 </body>
 </html>
 
